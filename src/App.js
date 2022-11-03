@@ -1,11 +1,14 @@
 import './App.css';
-import Header from './Components/Layout/Header';
+import React from 'react';
+import Header from './Components/Layout/Header/Header';
+import Summary from './Components/Layout/Summary';
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-    </div>
+    <React.Fragment>
+      <Header />
+      <Summary />
+    </React.Fragment>
   );
 }
 
