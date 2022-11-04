@@ -1,16 +1,22 @@
 import "./App.css";
-import React from "react";
+import {Fragment , useState} from "react";
 import Header from "./Components/Layout/Header/Header";
 import Meals from "./Components/Layout/Meals/Meals";
 import Cart from "./Components/Cart/Cart";
 
 function App() {
+  const [cartOpen, setCartOpen] = useState(false)
+
+  const openCartFun = () =>{
+    setCartOpen(!cartOpen)
+  }
+
   return (
-    <React.Fragment>
-      <Cart />
-      <Header />
+    <Fragment>
+      {cartOpen && <Cart onCloseHandler={openCartFun} />}
+      <Header  openCart={openCartFun} />
       <Meals />
-    </React.Fragment>
+    </Fragment>
   );
 }
 
