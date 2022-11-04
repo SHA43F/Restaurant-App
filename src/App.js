@@ -7,14 +7,14 @@ import Cart from "./Components/Cart/Cart";
 function App() {
   const [cartOpen, setCartOpen] = useState(false)
 
-  const openCartFun = () =>{
+  const cartState = () =>{
     setCartOpen(!cartOpen)
   }
 
   return (
     <Fragment>
-      {cartOpen && <Cart onCloseHandler={openCartFun} />}
-      <Header  openCart={openCartFun} />
+      {cartOpen && <Cart onCloseCart={cartState} />}
+      <Header  onOpenCart={cartState} />
       <Meals />
     </Fragment>
   );
