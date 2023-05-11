@@ -1,3 +1,19 @@
+# Restaurant Web Application
+
+![Image alt text](https://raw.githubusercontent.com/SHA43F/Restaurant-App/master/src/assets/Dishes.jpg "Restaurent")
+
+This repository contains a restaurant web application built with React JS and CSS that allows customers to browse available food items, add and remove them from a cart, and complete a checkout process. Additionally, an admin panel is provided that enables authorized users to add and remove food products from the application.
+
+# Features
+
+The application contains the following features:
+
+- Dynamic rendering of components with React JS
+- Custom styling with CSS
+- Add and remove food items to cart
+- Checkout through cart
+- Admin panel to add and remove food products from the application
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
